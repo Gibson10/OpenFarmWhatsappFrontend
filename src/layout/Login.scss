@@ -1,0 +1,45 @@
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800'); */
+.basicpage{
+	background-image: url(https://images.unsplash.com/photo-1543699565-003b8adda5fc?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9);
+	
+	animation-fill-mode: forwards;
+	background-size: 100% 100%;
+	padding: 0 15px
+}
+
+
+
+.logo{max-width: 80px; margin: 0 auto; text-align: center; margin-bottom: 25px;}
+.basicbox{
+	background: rgba(255,255,255,1);
+	border-radius: 40px;
+	overflow: hidden;
+	width:100%;
+	max-width: 750px;
+	display: flex; justify-content: space-around; align-items: center;
+	
+}
+
+.basicbox > div{height: auto; min-height: 450px; width:50%}
+form{min-width:250px}
+.mainimg{height: 100%;     
+	background-image: url(https://images.unsplash.com/photo-1516245834210-c4c142787335?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9);
+	background-size: cover; position: relative;
+	background-position: center; }
+.registerimg{ background-image: url(https://images.unsplash.com/photo-1501228286853-24fd91e2c0c4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0d87c88d58034e64b1d50bffd1302dda&auto=format&fit=crop&w=750&q=80);}
+.resetimg{background-image: url(https://images.unsplash.com/1/bag-and-hands.jpg?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e67590234d9417585f3717e8fd804add&auto=format&fit=crop&w=747&q=80);}
+.mainimg:after{content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(238,58,41,0.2);}
+.mainform{height: 100%;  padding:25px; min-height: 200px; width:100%;     display: flex;
+    justify-content: center;
+	align-items: center;     flex-flow: column;}
+.eyeicon img { max-width: 15px; opacity: 0.4;}
+.PassPattern{margin: 0; font-size: 0.7rem;  list-style: none}
+.PassPattern .active{color:#6ad834}
+
+@media screen and (max-width:600px){
+	.mainimg{display: none}
+}

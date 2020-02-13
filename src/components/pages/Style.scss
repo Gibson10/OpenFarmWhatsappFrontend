@@ -1,0 +1,131 @@
+
+/* width */
+::-webkit-scrollbar { width: 5px; height:5px; }
+/* Track */
+::-webkit-scrollbar-track { box-shadow: inset 0 0 5px grey; border-radius: 10px; } 
+/* Handle */
+::-webkit-scrollbar-thumb {background:linear-gradient(#2d1582,#19a0ff); border-radius: 10px; }
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover { background: linear-gradient(#2d1582,#19a0ff);}
+
+
+/* width */
+::scrollbar { width: 5px; height:5px; }
+/* Track */
+::scrollbar-track { box-shadow: inset 0 0 5px grey; border-radius: 10px; } 
+/* Handle */
+::scrollbar-thumb {background: linear-gradient(#2d1582,#19a0ff); border-radius: 10px; }
+/* Handle on hover */
+::scrollbar-thumb:hover { background:linear-gradient(#2d1582,#19a0ff);}
+
+.ant-calendar-time.ant-calendar.ant-calendar-range a.ant-calendar-time-picker-btn{display: none !important;}
+.exporttable { position: fixed; left: 100%; z-index: 0; top: 0; background: #fff;}
+.datepickermodal{ max-width: 380px; margin: 10px auto 0 !important;
+    .ant-modal-content{background: transparent;}
+    .ant-modal-body, .ant-modal-close{visibility: hidden;}
+}
+//.rangepicker{ left: 50% !important; transform: translateX(-50%); }
+.ant-card-head-title { text-transform: capitalize; }
+
+
+
+.tablesearch{
+    width:100%; max-width: 200px; display: inline-block; vertical-align: top;
+    .ant-input-group-addon{padding: 0; border: 0}
+    .ant-input-group-addon button{border-radius: 0 4px 4px 0;}
+}
+.searchIcon{
+    span{display: none !important}
+    i{margin: 0 !important}
+}
+
+.linechart canvas{margin-left: -20px; }
+.maptooltip { position: absolute; top: 10px; left: 10px; background: rgba(255,255,255,0.3); box-shadow: 0 0 2px #ccc; padding: 5px; border-radius: 5px; color: linear-gradient(#2d1582,#19a0ff); font-size: 12px;
+    p{margin: 0;
+        small{color:#000}
+    }
+}
+.worldmap{ width: 100%; height: auto; min-height:350px;}
+.dashCard { //linear-gradient(#dc3324, #b31405);
+    background-size: cover;
+     color: #fff; //min-height: 140px; 
+    
+    overflow: hidden;
+    h2{color:#fff;margin: 0;     font-size: 1.6vw;}
+    p{margin: 0}
+    i {
+        position: absolute;
+        right: -10px;
+        bottom: -10px;
+        font-size: 5.4rem;
+        opacity: 0.5;
+    }
+}
+
+
+.dashCard2 { //linear-gradient(#dc3324, #b31405);
+    background-size: cover;
+     color: #ECECEC; //min-height: 140px; 
+    
+    overflow: hidden;
+    h2{color:#fff;margin: 0;     font-size: 1.6vw;}
+    p{margin: 0}
+    i {
+        position: absolute;
+        right: -10px;
+        bottom: -10px;
+        font-size: 5.4rem;
+        opacity: 0.5;
+    }
+}
+
+.demo-loadmore-list{
+    .ant-list-item{padding: 5px 0 !important}
+}
+
+@media (max-width:900px){
+    .tablesearch{max-width: 150px;}
+    .tabletopfield{
+        // flex-direction: row;
+        button span{display: none}
+    }
+    .dashCard h2{font-size: 23px;}
+    .maptooltip { position: relative; border-radius: 0; bottom: 0; left: 0; border-bottom:1px solid #e8e8e8; box-shadow: 0 0 0}
+    .worldmap{min-height: 220px}
+}
+@media (max-width:767px){
+    .tabletopfield{
+        flex-direction: column;
+        div:first-child{margin-bottom: 10px}
+    }    
+    .dashCard h2{font-size: 18px;}
+    .dashCard i{font-size: 3.6rem;}
+}
+@media (max-width:655px){.dashCard h2{font-size: 12px;}}
+@media (max-width:500px){
+    .dashCard h2{font-size: 4vw;}
+}
+
+#components-back-top-demo-custom .ant-back-top {
+    bottom: 100px;
+  }
+  #components-back-top-demo-custom .ant-back-top-inner {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 4px;
+    background-color: #1088e9;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .chartContainer {
+    display: grid;
+    grid-auto-flow: column;
+    min-width: 0;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+  }
+  

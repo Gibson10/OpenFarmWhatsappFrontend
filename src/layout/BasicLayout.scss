@@ -1,0 +1,30 @@
+.sidebarDiv{border-right: 0; z-index: 1; /*background: #c75348; background: linear-gradient(#e93e2f, #9c2318);*/}
+.headerdiv{ background:linear-gradient(#F0F2F5,#F0F2F5);  padding: 0 ; height:61px; z-index: 5; box-shadow:linear-gradient(#2d1582,#19a0ff);}
+.contentDiv{height: calc(100vh - 61px); padding: 20px; }
+.cardtable{border-top: 1px solid linear-gradient(#fff,#fff);}
+.cardtable ul.ant-pagination.ant-table-pagination{padding: 0 24px}
+.cardtable .ant-table-thead > tr > th{white-space: nowrap}
+.tablesearch + .ant-input-group-addon{padding: 0; border: 0}
+.tablesearch + .ant-input-group-addon button{border-radius: 0 4px 4px 0;}
+.custom-filter-dropdown{padding: 5px; box-shadow: 0 0 2px #ccc; background: #fff}
+.tabletopfield{display: flex; justify-content: space-between;}
+
+@media screen and (max-width:676px){
+  .tabletopfield button span{display: none}
+  .contentDiv{padding: 15px; }
+}
+
+@media screen and (max-width:576px){
+  .sidebarDiv{position: fixed;
+    height: 100%;
+    z-index: 2;
+    top: 54px;
+    padding-top: 6px;}
+  .contentDiv{min-height: 100vh; padding-top: 71px }
+  .sidebarDiv [class="ant-layout-sider-zero-width-trigger"]{ display: none;
+    top: 17px;
+    background: linear-gradient(#fff,#fff )
+    
+  }
+  .headerdiv{position: fixed; top: 0; width: 100%; }
+}
